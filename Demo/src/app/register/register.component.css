@@ -1,0 +1,304 @@
+/* body {
+    background-color: #f2e8e4;
+    margin: 2em;
+  }
+  
+  header {
+    margin: 5em;
+  }
+  header img {
+    object-fit: contain;
+    width: 17vw;
+    height: 20px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+  main img {
+    width: 80%;
+  }
+  
+  form,
+  p,
+  .social-sign-up {
+    width: 70%;
+  }
+  
+  form h4 {
+    color: rgba(95, 212, 196);
+    padding-bottom: 1em;
+  }
+  form .form-control {
+    background-color: #e5e2e9;
+    opacity: 0.7;
+   
+    width: 300px;
+  }
+  form .submit-btn {
+    background-color: rgba(95, 212, 196);
+    color: #ffffff;
+    width: 100%;
+  }
+  form .submit-btn:hover {
+    background-color: #f2e8e4;
+    color: #25789e;
+    border: 1px solid #25789e;
+  }
+  
+  p {
+    color: #aaaaaa;
+  }
+  
+  .hr-lines {
+    position: relative;
+    max-width: 500px;
+    margin: 50px 0;
+    text-align: center;
+  }
+  .hr-lines:before {
+    content: " ";
+    height: 2px;
+    width: 150px;
+    background: #aaaaaa;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  .hr-lines:after {
+    content: " ";
+    height: 2px;
+    width: 150px;
+    background: #aaaaaa;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  
+  .social-sign-up button {
+    width: 100%;
+    border: 1px solid #553b08;
+  }
+  .social-sign-up button:hover {
+    background: #75420e;
+    color: #ffffff;
+  }
+  .social-sign-up .fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .sign-in {
+    margin: 1em 0;
+    text-align: center;
+  }
+
+  .invalid-feedback{
+    color:red;
+  }
+
+  .error{
+    margin-top:2px;
+  } */
+
+
+
+
+
+
+  body {
+    background-color: #f2e8e4;
+    margin: 2em;
+}
+
+header {
+    margin: 5em;
+}
+
+header img {
+    object-fit: contain;
+    width: 17vw;
+    height: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+main img {
+    width: 80%;
+}
+
+form,
+p,
+.social-sign-up {
+    width: 70%;
+}
+
+form h4 {
+    color: rgba(95, 212, 196);
+    padding-bottom: 1em;
+}
+
+form .form-control {
+    background-color: #e5e2e9;
+    opacity: 0.7;
+    width: 100%;
+}
+
+form .submit-btn {
+    background-color: rgba(95, 212, 196);
+    color: #ffffff;
+    width: 100%;
+}
+
+form .submit-btn:hover {
+    background-color: #f2e8e4;
+    color: #25789e;
+    border: 1px solid #25789e;
+}
+
+p {
+    color: #aaaaaa;
+}
+
+.invalid-feedback {
+    color: red;
+}
+
+.error {
+    margin-top: 2px;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    background-color: #f2e8e4;
+    margin: 2em;
+  }
+  
+  header {
+    margin: 5em;
+  }
+  header img {
+    object-fit: contain;
+    width: 17vw;
+    height: 20px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+  main img {
+    width: 80%;
+  }
+  
+  form,
+  p,
+  .social-sign-up {
+    width: 70%;
+  }
+  
+  form h4 {
+    color: rgba(95, 212, 196);
+    padding-bottom: 1em;
+  }
+  form .form-control {
+    background-color: #e5e2e9;
+    opacity: 0.7;
+   
+    width: 300px;
+  }
+  form .submit-btn {
+    background-color: rgba(95, 212, 196);
+    color: #ffffff;
+    width: 100%;
+  }
+  form .submit-btn:hover {
+    background-color: #f2e8e4;
+    color: #25789e;
+    border: 1px solid #25789e;
+  }
+  
+  p {
+    color: #aaaaaa;
+  }
+  
+  .hr-lines {
+    position: relative;
+    max-width: 500px;
+    margin: 50px 0;
+    text-align: center;
+  }
+  .hr-lines:before {
+    content: " ";
+    height: 2px;
+    width: 150px;
+    background: #aaaaaa;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  .hr-lines:after {
+    content: " ";
+    height: 2px;
+    width: 150px;
+    background: #aaaaaa;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  
+  .social-sign-up button {
+    width: 100%;
+    border: 1px solid #553b08;
+  }
+  .social-sign-up button:hover {
+    background: #75420e;
+    color: #ffffff;
+  }
+  .social-sign-up .fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .sign-in {
+    margin: 1em 0;
+    text-align: center;
+  }
+
+  .invalid-feedback{
+    color:red;
+  }
+
+  .error{
+    margin-top:2px;
+  } */

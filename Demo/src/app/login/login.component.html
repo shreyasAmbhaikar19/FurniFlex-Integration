@@ -1,0 +1,42 @@
+<div class="container">
+    <header class="row text-center">
+        <div class="col logo">
+            <img src="../../images/furniflex-high-resolution-logo.png" alt="goodreads-logo" />
+        </div>
+    </header>
+    <main class="main row">
+        <div class="left col">
+            <img src="https://img.freepik.com/premium-vector/young-woman-enjoy-sitting-reading-book-hygge-concept-vector-illustration_194708-2078.jpg"
+                alt="girl-reading-a-book" />
+        </div>
+        <div class="right col">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <h4>Log In</h4>
+
+                <div class="mb-3">
+                    <label class="form-label" for="email">Email:</label>
+                    <input formControlName="email" type="email" class="form-control" id="email" placeholder="Email" />
+
+                    <div *ngIf="loginForm.get('email')!.invalid && loginForm.get('email')!.touched" class="invalid-feedback">
+                        <div *ngIf="loginForm.get('email')!.errors?.['required']">Email is required</div>
+                        <div *ngIf="loginForm.get('email')!.errors?.['email']">Email must be a valid email address</div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="password">Password:</label>
+                    <input formControlName="password" type="password" class="form-control" id="password" placeholder="Password" />
+
+                    <div *ngIf="loginForm.get('password')!.invalid && loginForm.get('password')!.touched" class="invalid-feedback">
+                        <div *ngIf="loginForm.get('password')!.errors?.['required']">Password is required</div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn submit-btn" [disabled]="!loginForm.valid">Log In</button>
+            </form>
+            <div class="sign-up">
+                <p>Don't have an account? <a routerLink="/">Sign Up</a></p>
+            </div>
+        </div>
+    </main>
+</div>

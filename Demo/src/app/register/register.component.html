@@ -1,0 +1,94 @@
+<!-- <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" formControlName="firstName">
+    </div>
+    <div>
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" formControlName="lastName">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" formControlName="email">
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" formControlName="password">
+    </div>
+    <button type="submit">Register</button>
+  </form>
+   -->
+
+
+
+
+   <div class="container">
+    <header class="row text-center">
+        <div class="col logo">
+            <img src="../../images/furniflex-high-resolution-logo.png" alt="goodreads-logo" />
+        </div>
+    </header>
+    <main class="main row">
+        <div class="left col">
+            <img src="https://img.freepik.com/premium-vector/young-woman-enjoy-sitting-reading-book-hygge-concept-vector-illustration_194708-2078.jpg"
+                alt="girl-reading-a-book" />
+        </div>
+        <div class="right col">
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                <h4>Sign Up</h4>
+
+                <div class="mb-3">
+                    <label class="form-label" for="firstName">First Name:</label>
+                    <input formControlName="firstName" type="text" class="form-control" id="firstName" placeholder="First Name" />
+
+                    <div *ngIf="registerForm.get('firstName')!.invalid && registerForm.get('firstName')!.touched" class="invalid-feedback">
+                        <div *ngIf="registerForm.get('firstName')!.errors?.['required']" class="error">First Name is required</div>
+                        <div *ngIf="registerForm.get('firstName')!.errors?.['minlength'] || registerForm.get('firstName')!.errors?.['maxlength']">
+                            First Name must be between 3 and 20 characters
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="lastName">Last Name:</label>
+                    <input formControlName="lastName" type="text" class="form-control" id="lastName" placeholder="Last Name" />
+
+                    <div *ngIf="registerForm.get('lastName')!.invalid && registerForm.get('lastName')!.touched" class="invalid-feedback">
+                        <div *ngIf="registerForm.get('lastName')!.errors?.['required']">Last Name is required</div>
+                        <div *ngIf="registerForm.get('lastName')!.errors?.['minlength'] || registerForm.get('lastName')!.errors?.['maxlength']">
+                            Last Name must be between 3 and 20 characters
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="email">Email Id:</label>
+                    <input formControlName="email" type="email" class="form-control" id="email" placeholder="Email Id" />
+
+                    <div *ngIf="registerForm.get('email')!.invalid && registerForm.get('email')!.touched" class="invalid-feedback">
+                        <div *ngIf="registerForm.get('email')!.errors?.['required']">Email is required</div>
+                        <div *ngIf="registerForm.get('email')!.errors?.['email']">Email must be a valid email address</div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="password">New Password:</label>
+                    <input formControlName="password" type="password" class="form-control" id="password" placeholder="New password" />
+
+                    <div *ngIf="registerForm.get('password')!.invalid && registerForm.get('password')!.touched" class="invalid-feedback">
+                        <div *ngIf="registerForm.get('password')!.errors?.['required']">New Password is required</div>
+                        <div *ngIf="registerForm.get('password')!.errors?.['minlength'] || registerForm.get('password')!.errors?.['maxlength']">
+                            Password must be between 8 and 20 characters
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn submit-btn" [disabled]="!registerForm.valid">Create account</button>
+            </form>
+            <div class="sign-in">
+                <p>Already have an account? <a routerLink="/login">Log in</a></p>
+            </div>
+        </div>
+    </main>
+</div>
+
