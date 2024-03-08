@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 // import { AdminComponent } from './admin/admin.component';
 import { ProductsComponent } from './products/products.component';
+import { SingleProductComponent } from './single-product/single-product.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { ProductsComponent } from './products/products.component';
     HeaderComponent,
     FooterComponent,
     // AdminComponent,
-    ProductsComponent
+    ProductsComponent,
+    SingleProductComponent
   ],
   imports: [
     BrowserModule,
